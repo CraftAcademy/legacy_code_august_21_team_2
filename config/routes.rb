@@ -2,7 +2,7 @@
 
 Rails.application.routes.draw do
   namespace :api do
-    resources :images
+    resources :images, only: [:index]
     #get 'images/image_analysis'
   end
   #get '/api/images', controller: :images, action: :image_analysis

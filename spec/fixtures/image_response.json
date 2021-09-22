@@ -1,0 +1,15 @@
+{
+  "id": 101,
+  "category": "image",
+  "resource": "https://www.momentsandthings.se/wp-content/uploads/2016/06/Gunga-ek-med-namn.jpg",
+  "results": {
+      "safe": "0.99471396",
+      "explicit": "0.005008203",
+      "suggestive": "0.00019632297",
+      "drug": "8.13282e-05",
+      "gore": "1.4349055e-07"
+  },
+  "request_ip": "62.20.172.180",
+  "created_at": "2021-09-22T15:57:39.447Z",
+  "updated_at": "2021-09-22T15:57:39.447Z"
+}
