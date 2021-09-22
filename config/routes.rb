@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
-Rails.application.routes.draw do
+Rails.application.routes.draw do  
   namespace :api do
-    resources :images, only: [:index]
-    #get 'images/image_analysis'
+    resources :analyses, only: :index
   end
-  #get '/api/images', controller: :images, action: :image_analysis
+  # get '/api/analyses', controller: :images, action: :image_analysis
 end
