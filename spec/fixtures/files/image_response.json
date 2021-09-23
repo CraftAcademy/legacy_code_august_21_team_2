@@ -1,15 +1,1 @@
-{
-  "id": 101,
-  "category": "image",
-  "resource": "https://www.momentsandthings.se/wp-content/uploads/2016/06/Gunga-ek-med-namn.jpg",
-  "results": {
-      "safe": "0.99471396",
-      "explicit": "0.005008203",
-      "suggestive": "0.00019632297",
-      "drug": "8.13282e-05",
-      "gore": "1.4349055e-07"
-  },
-  "request_ip": "62.20.172.180",
-  "created_at": "2021-09-22T15:57:39.447Z",
-  "updated_at": "2021-09-22T15:57:39.447Z"
-}
+"{\"status\":{\"code\":10000,\"description\":\"Ok\",\"req_id\":\"a770a425a1e84f8398830f3a330284c8\"},\"outputs\":[{\"id\":\"ca0d3859bcc24f11a4d26cca66aa99ec\",\"status\":{\"code\":10000,\"description\":\"Ok\"},\"created_at\":\"2021-09-23T14:46:11.991964262Z\",\"model\":{\"id\":\"d16f390eb32cad478c7ae150069bd2c6\",\"name\":\"moderation\",\"created_at\":\"2017-05-16T19:20:38.733764Z\",\"modified_at\":\"2017-07-06T03:14:45.877063Z\",\"app_id\":\"main\",\"output_info\":{\"output_config\":{\"concepts_mutually_exclusive\":false,\"closed_environment\":false,\"max_concepts\":0,\"min_value\":0},\"message\":\"Show output_info with: GET /models/{model_id}/output_info\",\"type\":\"concept\",\"type_ext\":\"concept\",\"fields_map\":{\"concepts\":\"softmax\"}},\"model_version\":{\"id\":\"aa8be956dbaa4b7a858826a84253cab9\",\"created_at\":\"2017-10-31T16:30:31.226185Z\",\"status\":{\"code\":21100,\"description\":\"Model is trained and ready\"},\"visibility\":{\"gettable\":50},\"app_id\":\"main\",\"user_id\":\"clarifai\",\"metadata\":{}},\"display_name\":\"Moderation\",\"user_id\":\"clarifai\",\"input_info\":{\"fields_map\":{\"image\":\"images\"}},\"train_info\":{},\"model_type_id\":\"visual-classifier\",\"visibility\":{\"gettable\":50},\"metadata\":{},\"toolkits\":[],\"use_cases\":[]},\"input\":{\"id\":\"69e0917620e3470d9d688bbe9445f246\",\"data\":{\"image\":{\"url\":\"https://www.tress.com/products/billeder_fra_tress/900pixel/656022.jpg\"}}},\"data\":{\"concepts\":[{\"id\":\"ai_QD1zClSd\",\"name\":\"safe\",\"value\":0.9999896,\"app_id\":\"main\"},{\"id\":\"ai_kBBGf7r8\",\"name\":\"gore\",\"value\":0.000005203112,\"app_id\":\"main\"},{\"id\":\"ai_RtXh5qkR\",\"name\":\"suggestive\",\"value\":0.000004575949,\"app_id\":\"main\"},{\"id\":\"ai_V76bvrtj\",\"name\":\"explicit\",\"value\":2.9322536e-07,\"app_id\":\"main\"},{\"id\":\"ai_8QQwMjQR\",\"name\":\"drug\",\"value\":1.9213473e-07,\"app_id\":\"main\"}]}}]}"
