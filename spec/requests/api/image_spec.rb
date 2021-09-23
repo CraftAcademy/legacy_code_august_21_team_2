@@ -28,8 +28,12 @@ RSpec.describe 'POST /api/analyses', type: :request do
       expect(response_json['category']).to eq 'image'
     end
 
-    it 'is expected to display safe percentage of image' do
+    it 'is expected to display result percentages of image' do
       expect(response_json['results']['safe'].to_f).to eq 0.9999896
+      expect(response_json['results']['gore'].to_f).to eq 5.203112e-06
+      expect(response_json['results']['suggestive'].to_f).to eq 4.575949e-06
+      expect(response_json['results']['explicit'].to_f).to eq 2.9322536e-07
+      expect(response_json['results']['drug'].to_f).to eq 1.9213473e-07
     end
   end
 end
