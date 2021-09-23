@@ -1,32 +1,23 @@
-require 'rails_helper'
-RSpec.describe 'POST https://safe-for-work-api.herokuapp.com/api/analyses', type: :request do
-  #   before do
-  #     post "/api/analyses"
-  #   end
-
-  #   subject { response }
-
-  #   describe "when there are no images in the database" do
-  #     it { is_expected.to have_http_status 200 }
-
-  #     it "is expected to respond with a message" do
-  #       expect(response_json["message"]).to eq "There are no images"
-  #     end
-  #   end
-  # end
-
-  before do
-    stub_request(:post,
-                 'https://safe-for-work-api.herokuapp.com/api/analyses').with(
-                   body: { 'category' => 'image' }
-                 ).to_return(
-                   body: File.new('./spec/fixtures/image_response.json')
-                 )
+RSpec.describe 'POST /api/analyses', type: :request do
+  let(:expected_response) do
+    file_fixture(image_response.json).read
   end
+
+  params = { analysis: {
+    resource: 'https://www.momentsandthings.se/wp-content/uploads/2016/06/Gunga-ek-med-namn.jpg',
+    category: 'image'
+  } }
 
   subject { response }
 
   describe 'when the image api is used' do
+    before do
+      stub_request(:post,
+                   'https://safe-for-work-api.herokuapp.com/api/analyses').to_return(
+                     body: expected_response
+                   )
+    end
+
     it 'is expected to have a category of image' do
       expect(response_json['category']).to eq 'image'
     end
