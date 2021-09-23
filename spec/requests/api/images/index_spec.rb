@@ -25,8 +25,11 @@ RSpec.describe 'POST /api/analyses', type: :request do
     it { is_expected.to have_http_status 200 }
 
     it 'is expected to have a category of image' do
-      binding.pry
       expect(response_json['category']).to eq 'image'
+    end
+
+    it 'is expected to display safe percentage of image' do
+      expect(response_json['results']['safe'].to_f).to eq 0.9999896
     end
   end
 end
