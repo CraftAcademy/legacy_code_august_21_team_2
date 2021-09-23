@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/environment.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -10,7 +10,7 @@
           1
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/application.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/application.rb": {
         "lines": [
           null,
           null,
@@ -45,14 +45,14 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/boot.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/boot.rb": {
         "lines": [
           1,
           null,
           1
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/environments/test.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/environments/test.rb": {
         "lines": [
           null,
           null,
@@ -103,7 +103,7 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/initializers/application_controller_renderer.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -115,7 +115,7 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/initializers/backtrace_silencers.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -126,7 +126,7 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/initializers/clarifai.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/initializers/clarifai.rb": {
         "lines": [
           1,
           1,
@@ -134,7 +134,7 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/initializers/cors.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/initializers/cors.rb": {
         "lines": [
           null,
           null,
@@ -153,7 +153,7 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/initializers/filter_parameter_logging.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -161,7 +161,7 @@
           1
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/initializers/inflections.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -181,7 +181,7 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/initializers/mime_types.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -189,14 +189,14 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/initializers/monkeylearn.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/initializers/monkeylearn.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/initializers/wrap_parameters.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -214,7 +214,7 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/config/routes.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/config/routes.rb": {
         "lines": [
           null,
           null,
@@ -225,7 +225,7 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/spec/support/response_json.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/spec/support/response_json.rb": {
         "lines": [
           1,
           1,
@@ -234,7 +234,7 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/spec/requests/api/images/index_spec.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/spec/requests/api/images/index_spec.rb": {
         "lines": [
           1,
           1,
@@ -253,9 +253,10 @@
           1,
           1,
           null,
+          null,
+          null,
+          null,
           1,
-          null,
-          null,
           1,
           null,
           null,
@@ -276,7 +277,7 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/app/controllers/api/analyses_controller.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/app/controllers/api/analyses_controller.rb": {
         "lines": [
           null,
           null,
@@ -307,6 +308,7 @@
           0,
           0,
           null,
+          0,
           null,
           null,
           1,
@@ -328,13 +330,13 @@
           null
         ]
       },
-      "/Users/johnnysee/CA/legacy_code_august_21_team_2/app/controllers/application_controller.rb": {
+      "/home/august/craftAcademy/legacy_code_august_21_team_2/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
         ]
       }
     },
-    "timestamp": 1632391495
+    "timestamp": 1632393960
   }
 }

@@ -27,6 +27,7 @@ class Api::AnalysesController < ApplicationController
     elsif analysis_category == :text
       @results = text_analysis(resource)
     end
+    binding.pry
   end
 
   def text_analysis(text)

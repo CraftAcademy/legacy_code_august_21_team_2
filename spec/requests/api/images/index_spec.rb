@@ -14,10 +14,11 @@ RSpec.describe "POST /api/analyses", type: :request do
 
   describe 'when the image api is used' do
     before do
-      stub_request(:post,
-                   "https://safe-for-work-api.herokuapp.com/api/analyses").to_return(
-        body: expected_response,
-      )
+      # binding.pry
+      stub_request(:post, "https://api.clarifai.com/v2/models/d16f390eb32cad478c7ae150069bd2c6/outputs").
+      with(
+        body: "{\"inputs\":[{\"data\":{\"image\":{\"url\":\"https://www.momentsandthings.se/wp-content/uploads/2016/06/Gunga-ek-med-namn.jpg\"}}}]}").
+      to_return(status: 200, body: expected_response)
       post "/api/analyses", params: params
     end
 
