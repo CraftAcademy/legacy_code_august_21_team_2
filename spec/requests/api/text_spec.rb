@@ -27,7 +27,7 @@ RSpec.describe "POST /api/analyses", type: :request do
     end
 
     it "is expected to return a profanity response" do
-      expect(eval(response["results"]["classifications"])[0]["tag_name"]).to eq "profantiy"
+      expect(eval(response_json["results"]["classifications"])[0]["tag_name"]).to eq "profanity"
     end
   end
 end
