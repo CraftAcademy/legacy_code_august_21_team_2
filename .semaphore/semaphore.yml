@@ -38,4 +38,4 @@ blocks:
           commands:
             - ./cc-test-reporter after-build --exit-code 1
       secrets:
-        - name: RAILS_MASTER_KEY
+        - name: Rails_Master_Key
