@@ -13,7 +13,7 @@ blocks:
         - name: RAILS_ENV
           value: test
         - name: CC_TEST_REPORTER_ID
-          value: 77add7c0b39428f35cba74fcc3137c19b41e2971270c8810bed73e52a19e8de1
+          value: d2d1e2fcf9413b77b7d5e135aa43adcce1c235668b3ae553189c9a0e242bbeae
       jobs:
         - name: Test
           commands:
