@@ -21,7 +21,7 @@ RSpec.describe 'POST /api/analyses', type: :request do
     } }
   end
 
-  describe 'when the text api is used' do
+  describe 'when the text api is used on profanity' do
     before do
       stub_request(:post, 'https://api.monkeylearn.com/v3/classifiers/cl_KFXhoTdt/classify/')
         .with(
@@ -31,7 +31,7 @@ RSpec.describe 'POST /api/analyses', type: :request do
       post '/api/analyses', params: params_profanity
     end
 
-    #   it { is_expected.to have_http_status 200 }
+    it { is_expected.to have_http_status 200 }
 
     it 'is expected to have a category of text' do
       expect(response_json['category']).to eq 'text'
@@ -42,7 +42,7 @@ RSpec.describe 'POST /api/analyses', type: :request do
     end
   end
 
-  describe 'when the text api is used' do
+  describe 'when the text api is used on clean text' do
     before do
       stub_request(:post, 'https://api.monkeylearn.com/v3/classifiers/cl_KFXhoTdt/classify/')
         .with(
