@@ -5,17 +5,17 @@ class Api::AnalysesController < ApplicationController
 
   def create
     analysis = Analysis.create(analysis_params
-                                   .merge!(results: @results,
-                                           request_ip: request.remote_ip))
+    .merge!(results: @results,
+    request_ip: request.remote_ip))
     if analysis.persisted?
       render json: analysis
     else
       render json: analysis.errors.full_messages, status: 422
     end
   end
-
+  
   private
-
+  
   def analysis_params
     params.require(:analysis).permit!
   end
@@ -28,11 +28,11 @@ class Api::AnalysesController < ApplicationController
       @results = text_analysis(resource)
     end
   end
-
+  
   def text_analysis(text)
     model_id = 'cl_KFXhoTdt' # Profanity & Abuse Detection
     response = Monkeylearn.classifiers.classify(model_id, [text])
-    response.body[0]
+    response.body.is_a?(Array) ? response.body[0] : response.body
   end
 
   def image_analysis(url)
